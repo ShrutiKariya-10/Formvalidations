@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import ContactForm from "./pages/ContactForm";
-import SignupForm from "./pages/SignupForm";
-import FeedbackForm from "./pages/FeedbackForm";
+import Navbar from "./Components/Navbar";
+import Contactform from "./Pages/Contactform";
+import Signupform from "./Pages/Signupform";
+import Feedbackform from "./Pages/Feedbackform";
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<ContactForm />} />
-        <Route path="/signup" element={<SignupForm />} />
-        <Route path="/feedback" element={<FeedbackForm />} />
+        <Route path="/" element={<Contactform />} />
+        <Route path="/signup" element={<Signupform />} />
+        <Route path="/feedback" element={<Feedbackform />} />
       </Routes>
     </div>
   );
